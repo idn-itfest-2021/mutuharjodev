@@ -1,0 +1,362 @@
+.container {
+  max-width: 1440px;
+}
+
+/* HEADER */
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.header-content h1 {
+  font-family: Poppins-Bold;
+  font-size: 48px;
+  color: #1f2937;
+  text-align: center;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content h1 {
+    font-size: 36px;
+    margin-bottom: 18px;
+  }
+}
+
+.header-content p {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  color: #1f2937;
+  text-align: center;
+  line-height: 32px;
+}
+
+@media screen and (max-width: 768px) {
+  .header-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
+.header-scroll {
+  position: absolute;
+  bottom: 48px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+  .header-scroll {
+    bottom: 24px;
+  }
+}
+
+.header-scroll p {
+  font-family: Poppins-Regular;
+  font-size: 14px;
+  color: #1f2937;
+  margin-bottom: 14px;
+  letter-spacing: 4px;
+}
+
+.header-scroll button {
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  border: none;
+  background-color: #3b82f6;
+  cursor: pointer;
+  color: #fff;
+}
+
+.header-scroll button svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* CATEGORIES */
+
+#categories .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+  #categories .container {
+    padding-bottom: 72px;
+  }
+}
+
+.categories-header h1 {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  color: #1f2937;
+  text-align: center;
+  letter-spacing: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .categories-header h1 {
+    font-size: 14px;
+    letter-spacing: 8px;
+  }
+}
+
+.categories-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .categories-content {
+    flex-direction: column;
+  }
+}
+
+.categories-detail {
+  flex-basis: 50%;
+}
+
+.categories-detail h1 {
+  font-family: BebasNeue-Regular;
+  font-size: 128px;
+  color: #1f2937;
+  line-height: 106px;
+  letter-spacing: 14px;
+  margin: 2px 0 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-detail h1 {
+    font-size: 96px;
+    line-height: 78px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories-detail h1 {
+    font-size: 72px;
+    line-height: 64px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .categories-detail h1 {
+    letter-spacing: 8px;
+  }
+}
+
+.categories-detail p {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  color: #1f2937;
+  margin-bottom: 36px;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-detail p {
+    font-size: 14px;
+  }
+}
+
+.categories-image {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .categories-image {
+    justify-content: center;
+  }
+}
+
+.categories-image img {
+  margin-left: 36px;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-image img {
+    max-height: 260px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .categories-image img {
+    margin: 0;
+  }
+}
+
+.categories-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.categories-button:first-child {
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .categories-button:first-child {
+    margin-right: 0;
+  }
+}
+
+.categories-button--main {
+  height: 64px;
+  width: 96px;
+  background-color: #9ca3af;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.categories-button--main:hover ~ .categories-button--shadow {
+  margin: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-button--main {
+    height: 56px;
+    width: 72px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .categories-button--main {
+    width: 64px;
+  }
+}
+
+.categories-button--main svg {
+  color: #fff;
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-button--main svg {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.categories-button--shadow {
+  height: 64px;
+  width: 96px;
+  border: 1px solid #1f2937;
+  margin: 6px 0 0 6px;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-button--shadow {
+    height: 56px;
+    width: 72px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .categories-button--shadow {
+    width: 64px;
+  }
+}
+
+.categories-button__select {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.categories-button__select--main:hover ~ .categories-button__select--shadow {
+  margin: 0px;
+}
+
+.categories-button__select--main {
+  height: 64px;
+  width: 256px;
+  background-color: #3b82f6;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 36px;
+  align-items: center;
+  position: absolute;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-button__select--main {
+    height: 56px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .categories-button__select--main {
+    width: 160px;
+    padding: 0 24px;
+  }
+}
+
+.categories-button__select--main svg {
+  color: #fff;
+  width: 36px;
+  height: 36px;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-button__select--main svg {
+    color: #fff;
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.categories-button__select--main p {
+  font-family: Poppins-Regular;
+  font-size: 18px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-button__select--main p {
+    font-size: 14px;
+  }
+}
+
+.categories-button__select--shadow {
+  height: 64px;
+  width: 256px;
+  border: 1px solid #1f2937;
+  margin: 6px 0 0 6px;
+}
+
+@media screen and (max-width: 1024px) {
+  .categories-button__select--shadow {
+    height: 56px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .categories-button__select--shadow {
+    width: 160px;
+  }
+}

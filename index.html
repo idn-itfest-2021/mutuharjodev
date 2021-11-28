@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Roadmap Programmer - Zero to Hero</title>
+    <link rel="stylesheet" href="./assets/styles/globals.css" />
+    <link rel="stylesheet" href="./assets/styles/index.css" />
+    <style>
+      .categories-button__select:hover ~ .categories-button__select--shadow {
+        margin: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section id="header">
+        <div class="container">
+          <div class="header-content">
+            <h1>
+              Learning
+              <span style="font-size: 36px; border-bottom: 4px solid #3b82f6"
+                >path</span
+              >
+              Programmer
+            </h1>
+            <p>
+              Belajar Programming sekarang dengan mudah,<br />
+              dengan alur belajar yang teratur.
+            </p>
+          </div>
+        </div>
+        <div class="header-scroll">
+          <p>SCROLL KEBAWAH</p>
+          <button id="btn_header_scroll">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-caret-down-fill"
+              viewBox="0 0 16 16"
+              style="margin-top: 4px"
+            >
+              <path
+                d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section id="categories">
+        <div class="container">
+          <div class="categories-header">
+            <h1>PILIH KATEGORI</h1>
+          </div>
+          <div class="categories-content">
+            <div class="categories-detail">
+              <h1>Front End Developer</h1>
+              <p>
+                Software Developer yang bertanggung jawab untuk merancang dan
+                membangun berbagai aplikasi web secara responsif, interaktif,
+                dan juga user friendly.
+              </p>
+            </div>
+            <div class="categories-image">
+              <img
+                src="./assets/images/illust/illust-front-end-categories.svg"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="categories-footer">
+            <div class="categories-change">
+              <button id="btn_categories_prev" class="categories-button">
+                <div class="categories-button--main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-left-short"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z"
+                    />
+                  </svg>
+                </div>
+                <div class="categories-button--shadow"></div>
+              </button>
+              <button id="btn_categories_next" class="categories-button">
+                <div class="categories-button--main">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-arrow-right-short"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                    />
+                  </svg>
+                </div>
+                <div class="categories-button--shadow"></div>
+              </button>
+            </div>
+            <button class="categories-button__select">
+              <div class="categories-button__select--main">
+                <p>Mulai Belajar</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  fill="currentColor"
+                  class="bi bi-arrow-right-short"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"
+                  />
+                </svg>
+              </div>
+              <div class="categories-button__select--shadow"></div>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./assets/scripts/index.js"></script>
+  </body>
+</html>
